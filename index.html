@@ -438,6 +438,63 @@
 	    width: 100%;
 	  }
 	}
+    
+    /* Flag bar styles */
+    .flag-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px 0;
+      background-color: rgba(255, 255, 255, 0.15);
+      margin-bottom: 30px;
+      border-radius: 10px;
+    }
+    
+    .flag {
+      width: 40px;
+      height: 25px;
+      border-radius: 3px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    
+    .flag:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    
+    .international-badge {
+      display: inline-block;
+      background-color: var(--accent);
+      color: var(--dark);
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 3px;
+      margin-left: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .flags-section {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+    }
+    
+    .flags-section h3 {
+      color: white;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .flags-section h3 i {
+      margin-right: 10px;
+      color: var(--accent);
+    }
     </style>
     <link
       rel="stylesheet"
@@ -533,9 +590,45 @@
                 margin-bottom: 1.5rem;
               "
             >
-              Trusted by hundreds of clients across New York State. Fully
+              Trusted by hundreds of clients across North America and the Caribbean. Fully
               licensed, battle-tested legal experts who WIN CASES.
             </p>
+            
+            <div class="flags-section">
+              <h3><i class="fas fa-globe-americas"></i> OUR INTERNATIONAL REACH</h3>
+              <div class="flag-bar">
+                <!-- North America -->
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="USA" class="flag" title="United States">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ca.svg" alt="Canada" class="flag" title="Canada">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Mexico" class="flag" title="Mexico">
+                
+                <!-- Central America -->
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gt.svg" alt="Guatemala" class="flag" title="Guatemala">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bz.svg" alt="Belize" class="flag" title="Belize">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sv.svg" alt="El Salvador" class="flag" title="El Salvador">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/hn.svg" alt="Honduras" class="flag" title="Honduras">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ni.svg" alt="Nicaragua" class="flag" title="Nicaragua">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cr.svg" alt="Costa Rica" class="flag" title="Costa Rica">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/pa.svg" alt="Panama" class="flag" title="Panama">
+                
+                <!-- Caribbean -->
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cu.svg" alt="Cuba" class="flag" title="Cuba">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ht.svg" alt="Haiti" class="flag" title="Haiti">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/do.svg" alt="Dominican Republic" class="flag" title="Dominican Republic">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jm.svg" alt="Jamaica" class="flag" title="Jamaica">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/pr.svg" alt="Puerto Rico" class="flag" title="Puerto Rico">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bs.svg" alt="Bahamas" class="flag" title="Bahamas">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/tt.svg" alt="Trinidad and Tobago" class="flag" title="Trinidad and Tobago">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bb.svg" alt="Barbados" class="flag" title="Barbados">
+                
+                <!-- Northern South America -->
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/co.svg" alt="Colombia" class="flag" title="Colombia">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ve.svg" alt="Venezuela" class="flag" title="Venezuela">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gy.svg" alt="Guyana" class="flag" title="Guyana">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sr.svg" alt="Suriname" class="flag" title="Suriname">
+              </div>
+            </div>
+            
             <p>
               World Wide Lawyer Services delivers aggressive legal advocacy with
               a 92% success rate. Our international approach brings unique
@@ -578,6 +671,19 @@
                   >RAPID RESPONSE within 24 hours guaranteed</span
                 >
               </div>
+              <div style="display: flex; align-items: center; margin-top: 10px">
+                <i
+                  class="fas fa-check-circle"
+                  style="
+                    color: var(--accent);
+                    font-size: 1.2rem;
+                    margin-right: 10px;
+                  "
+                ></i>
+                <span style="font-weight: 500"
+                  >MULTILINGUAL STAFF fluent in English, Spanish, French & Creole</span
+                >
+              </div>
             </div>
 	    <div class="button-container">
             <a href="#contact" class="btn">GET FREE CONSULTATION</a>
@@ -611,7 +717,7 @@
             <div class="service-icon">
               <i class="fas fa-gavel"></i>
             </div>
-            <h3>UNBEATABLE EVICTION SERVICES</h3>
+            <h3>UNBEATABLE EVICTION SERVICES <span class="international-badge">International</span></h3>
             <p>
               <strong>98% SUCCESS RATE</strong> in eviction proceedings. We
               handle the entire process from filing to execution, saving
@@ -638,7 +744,7 @@
             <div class="service-icon">
               <i class="fas fa-balance-scale"></i>
             </div>
-            <h3>AGGRESSIVE COURT REPRESENTATION</h3>
+            <h3>AGGRESSIVE COURT REPRESENTATION <span class="international-badge">International</span></h3>
             <p>
               Access to <strong>ALL COURT LEVELS</strong> with proven strategies
               that work. Our multilingual team brings international legal
@@ -665,7 +771,7 @@
             <div class="service-icon">
               <i class="fas fa-globe-americas"></i>
             </div>
-            <h3>LIGHTNING-FAST LEGAL PROCESSES</h3>
+            <h3>LIGHTNING-FAST LEGAL PROCESSES <span class="international-badge">International</span></h3>
             <p>
               Our <strong>RAPID RESPONSE TEAM</strong> handles subpoenas,
               notices, and all legal documentation with military precision. We
@@ -805,6 +911,31 @@
               Caribbean-influenced approach that combines aggressive advocacy
               with strategic precision.
             </p>
+            
+            <div style="
+              background-color: rgba(248, 217, 72, 0.1);
+              padding: 20px;
+              border-radius: 10px;
+              margin-bottom: 20px;
+              border-left: 5px solid var(--accent);
+            ">
+              <h3 style="color: var(--primary); margin-top: 0; margin-bottom: 15px;">
+                <i class="fas fa-globe-americas" style="margin-right: 10px;"></i>MULTILINGUAL LEGAL EXPERTISE
+              </h3>
+              <p style="margin-bottom: 10px;">
+                Our diverse legal team speaks <strong>English, Spanish, French, and Haitian Creole</strong>, 
+                allowing us to serve clients across North America, Central America, and the Caribbean with ease.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="USA" class="flag" title="United States">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Mexico" class="flag" title="Mexico">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ht.svg" alt="Haiti" class="flag" title="Haiti">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/do.svg" alt="Dominican Republic" class="flag" title="Dominican Republic">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jm.svg" alt="Jamaica" class="flag" title="Jamaica">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cu.svg" alt="Cuba" class="flag" title="Cuba">
+              </div>
+            </div>
+            
             <p>
               What sets us apart? Our MULTILINGUAL LEGAL EXPERTS understand
               cultural nuances that other firms miss, giving you unprecedented
