@@ -39,7 +39,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: radial-gradient(
+        background-image:
+          radial-gradient(
             circle at 20% 30%,
             rgba(255, 255, 255, 0.2) 0%,
             rgba(255, 255, 255, 0) 10%
@@ -420,81 +421,81 @@
         }
       }
       .button-container {
-	  display: flex;
-	  flex-wrap: wrap;
-	  gap: 15px;
-	  margin-top: 30px;
-	}
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 30px;
+      }
 
-	/* Add this to your media query section */
-	@media (max-width: 480px) {
-	  .button-container {
-	    flex-direction: column;
-	    align-items: stretch;
-	  }
-	  
-	  .btn {
-	    text-align: center;
-	    width: 100%;
-	  }
-	}
-    
-    /* Flag bar styles */
-    .flag-bar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      padding: 20px 0;
-      background-color: rgba(255, 255, 255, 0.15);
-      margin-bottom: 30px;
-      border-radius: 10px;
-    }
-    
-    .flag {
-      width: 40px;
-      height: 25px;
-      border-radius: 3px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-    
-    .flag:hover {
-      transform: scale(1.2);
-      cursor: pointer;
-    }
-    
-    .international-badge {
-      display: inline-block;
-      background-color: var(--accent);
-      color: var(--dark);
-      padding: 2px 8px;
-      font-size: 12px;
-      font-weight: bold;
-      border-radius: 3px;
-      margin-left: 5px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    
-    .flags-section {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-    }
-    
-    .flags-section h3 {
-      color: white;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-    }
-    
-    .flags-section h3 i {
-      margin-right: 10px;
-      color: var(--accent);
-    }
+      /* Add this to your media query section */
+      @media (max-width: 480px) {
+        .button-container {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .btn {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      /* Flag bar styles */
+      .flag-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 0;
+        background-color: rgba(255, 255, 255, 0.15);
+        margin-bottom: 30px;
+        border-radius: 10px;
+      }
+
+      .flag {
+        width: 40px;
+        height: 25px;
+        border-radius: 3px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      .flag:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+
+      .international-badge {
+        display: inline-block;
+        background-color: var(--accent);
+        color: var(--dark);
+        padding: 2px 8px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 3px;
+        margin-left: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .flags-section {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+      }
+
+      .flags-section h3 {
+        color: white;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .flags-section h3 i {
+        margin-right: 10px;
+        color: var(--accent);
+      }
     </style>
     <link
       rel="stylesheet"
@@ -504,71 +505,195 @@
   <body>
     <header>
       <div class="header-pattern"></div>
-      
+
       <!-- Netflix-style flag background -->
-      <div style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        opacity: 0.08;
-        pointer-events: none;
-      ">
-        <div style="
-          display: grid;
-          grid-template-columns: repeat(8, 1fr);
-          grid-template-rows: repeat(6, 1fr);
-          gap: 15px;
-          width: 120%;
-          height: 120%;
-          margin-top: -5%;
-          margin-left: -5%;
-          transform: rotate(-5deg);
-        ">
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          opacity: 0.08;
+          pointer-events: none;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 15px;
+            width: 120%;
+            height: 120%;
+            margin-top: -5%;
+            margin-left: -5%;
+            transform: rotate(-5deg);
+          "
+        >
           <!-- North America -->
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="USA" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ca.svg" alt="Canada" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Mexico" style="width: 100%; height: 100%; object-fit: cover;">
-          
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg"
+            alt="USA"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ca.svg"
+            alt="Canada"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg"
+            alt="Mexico"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+
           <!-- Central America -->
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gt.svg" alt="Guatemala" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bz.svg" alt="Belize" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sv.svg" alt="El Salvador" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/hn.svg" alt="Honduras" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ni.svg" alt="Nicaragua" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cr.svg" alt="Costa Rica" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/pa.svg" alt="Panama" style="width: 100%; height: 100%; object-fit: cover;">
-          
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gt.svg"
+            alt="Guatemala"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bz.svg"
+            alt="Belize"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sv.svg"
+            alt="El Salvador"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/hn.svg"
+            alt="Honduras"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ni.svg"
+            alt="Nicaragua"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cr.svg"
+            alt="Costa Rica"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/pa.svg"
+            alt="Panama"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+
           <!-- Caribbean -->
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cu.svg" alt="Cuba" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ht.svg" alt="Haiti" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/do.svg" alt="Dominican Republic" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jm.svg" alt="Jamaica" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/pr.svg" alt="Puerto Rico" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bs.svg" alt="Bahamas" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/tt.svg" alt="Trinidad and Tobago" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bb.svg" alt="Barbados" style="width: 100%; height: 100%; object-fit: cover;">
-          
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cu.svg"
+            alt="Cuba"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ht.svg"
+            alt="Haiti"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/do.svg"
+            alt="Dominican Republic"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jm.svg"
+            alt="Jamaica"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/pr.svg"
+            alt="Puerto Rico"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bs.svg"
+            alt="Bahamas"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/tt.svg"
+            alt="Trinidad and Tobago"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bb.svg"
+            alt="Barbados"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+
           <!-- Northern South America -->
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/co.svg" alt="Colombia" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ve.svg" alt="Venezuela" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gy.svg" alt="Guyana" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sr.svg" alt="Suriname" style="width: 100%; height: 100%; object-fit: cover;">
-          
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/co.svg"
+            alt="Colombia"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ve.svg"
+            alt="Venezuela"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gy.svg"
+            alt="Guyana"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sr.svg"
+            alt="Suriname"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+
           <!-- Repeat some flags to fill the grid -->
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="USA" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Mexico" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ca.svg" alt="Canada" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ht.svg" alt="Haiti" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/do.svg" alt="Dominican Republic" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jm.svg" alt="Jamaica" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/pr.svg" alt="Puerto Rico" style="width: 100%; height: 100%; object-fit: cover;">
-          <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bs.svg" alt="Bahamas" style="width: 100%; height: 100%; object-fit: cover;">
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg"
+            alt="USA"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg"
+            alt="Mexico"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ca.svg"
+            alt="Canada"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ht.svg"
+            alt="Haiti"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/do.svg"
+            alt="Dominican Republic"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jm.svg"
+            alt="Jamaica"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/pr.svg"
+            alt="Puerto Rico"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/bs.svg"
+            alt="Bahamas"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
         </div>
       </div>
-      
+
       <div class="container">
         <nav>
           <div style="display: flex; align-items: center; margin-bottom: 1rem">
@@ -645,7 +770,7 @@
 
         <div class="hero">
           <div class="hero-content">
-            <h1>POWERFUL LEGAL REPRESENTATION WITHOUT BORDERS</h1>
+            <h1>WORLD WIDE LAWYER SERVICES</h1>
             <p
               class="hero-tagline"
               style="
@@ -655,18 +780,10 @@
                 margin-bottom: 1.5rem;
               "
             >
-              Trusted by hundreds of clients across North America and the Caribbean. Fully
-              licensed, battle-tested legal experts who WIN CASES.
+              Serving Subpoenas, Notices of Claim, and Evictions for State,
+              Federal & County Courts. Legal Services & Express Courier.
             </p>
-            
-            <!-- Remove the flags section since they're now in the background -->
-            
-            <p>
-              World Wide Lawyer Services delivers aggressive legal advocacy with
-              a 92% success rate. Our international approach brings unique
-              perspectives to every case, giving you the edge in claims,
-              evictions, and court battles at ALL levels.
-            </p>
+
             <div
               style="
                 background-color: rgba(255, 255, 255, 0.15);
@@ -686,9 +803,7 @@
                     margin-right: 10px;
                   "
                 ></i>
-                <span style="font-weight: 500"
-                  >FULLY LICENSED in State, Federal & County Courts</span
-                >
+                <span style="font-weight: 500">FULLY LICENSED & BONDED</span>
               </div>
               <div style="display: flex; align-items: center">
                 <i
@@ -700,7 +815,7 @@
                   "
                 ></i>
                 <span style="font-weight: 500"
-                  >RAPID RESPONSE within 24 hours guaranteed</span
+                  >SAME-DAY & EXPRESS DELIVERY</span
                 >
               </div>
               <div style="display: flex; align-items: center; margin-top: 10px">
@@ -713,16 +828,16 @@
                   "
                 ></i>
                 <span style="font-weight: 500"
-                  >MULTILINGUAL STAFF fluent in English, Spanish, French & Creole</span
+                  >MULTILINGUAL STAFF: ENGLISH, SPANISH, FRENCH & CREOLE</span
                 >
               </div>
             </div>
-	    <div class="button-container">
-            <a href="#contact" class="btn">GET FREE CONSULTATION</a>
-            <a href="#services" class="btn btn-secondary"
-              >VIEW WINNING SERVICES</a
-            >
-	    </div>
+            <div class="button-container">
+              <a href="#contact" class="btn">GET FREE CONSULTATION</a>
+              <a href="#services" class="btn btn-secondary"
+                >VIEW OUR SERVICES</a
+              >
+            </div>
           </div>
           <div class="hero-image">
             <img
@@ -737,10 +852,10 @@
     <section class="services" id="services">
       <div class="container">
         <div class="section-header">
-          <h2>LEGAL SERVICES THAT GET RESULTS</h2>
+          <h2>OUR CORE SERVICES</h2>
           <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto">
-            Our battle-tested legal team delivers victory after victory where
-            others fail
+            Fast, secure, and reliable services for legal professionals,
+            businesses, and individuals.
           </p>
         </div>
 
@@ -749,81 +864,46 @@
             <div class="service-icon">
               <i class="fas fa-gavel"></i>
             </div>
-            <h3>UNBEATABLE EVICTION SERVICES <span class="international-badge">International</span></h3>
+            <h3>SAME-DAY & EXPRESS DELIVERIES</h3>
             <p>
-              <strong>98% SUCCESS RATE</strong> in eviction proceedings. We
-              handle the entire process from filing to execution, saving
-              property owners thousands in lost rent. Our streamlined system
-              gets results in HALF the time of typical proceedings.
+              We specialize in serving
+              <strong>subpoenas, notices of claim, and eviction notices</strong>
+              with speed and precision. Our experienced couriers ensure your
+              time-sensitive documents are delivered promptly across town or
+              across counties.
             </p>
-            <div
-              style="
-                background-color: #f8f8f8;
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 15px;
-                font-style: italic;
-              "
-            >
-              "World Wide Lawyer got my non-paying tenant out in 3 weeks when
-              other attorneys said it would take months." — Maria L., Property
-              Owner
-            </div>
-            <a href="#contact" class="btn">GET STARTED NOW</a>
+            <a href="#contact" class="btn">REQUEST DELIVERY</a>
           </div>
 
           <div class="service-card">
             <div class="service-icon">
               <i class="fas fa-balance-scale"></i>
             </div>
-            <h3>AGGRESSIVE COURT REPRESENTATION <span class="international-badge">International</span></h3>
+            <h3>COURT FILINGS & DOCUMENT TRANSPORT</h3>
             <p>
-              Access to <strong>ALL COURT LEVELS</strong> with proven strategies
-              that work. Our multilingual team brings international legal
-              perspectives that gives you the winning edge. We've represented
-              clients in over 1,200 cases across State, Federal, and County
-              Courts.
+              Reliable transport for
+              <strong
+                >confidential contracts, court filings, and interoffice
+                deliveries.</strong
+              >
+              We handle all legal materials with the utmost care,
+              professionalism, and efficiency to meet critical deadlines.
             </p>
-            <div
-              style="
-                background-color: #f8f8f8;
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 15px;
-                font-style: italic;
-              "
-            >
-              "They took my impossible case and turned it around completely.
-              Worth every penny." — James K., Business Owner
-            </div>
-            <a href="#contact" class="btn">SCHEDULE CONSULTATION</a>
+            <a href="#contact" class="btn">LEARN MORE</a>
           </div>
 
           <div class="service-card">
             <div class="service-icon">
               <i class="fas fa-globe-americas"></i>
             </div>
-            <h3>LIGHTNING-FAST LEGAL PROCESSES <span class="international-badge">International</span></h3>
+            <h3>INTERNATIONAL & SECURE SERVICE</h3>
             <p>
-              Our <strong>RAPID RESPONSE TEAM</strong> handles subpoenas,
-              notices, and all legal documentation with military precision. We
-              offer 24-hour turnaround on most document services when
-              competitors take days or weeks. Official US DOT registration
-              (#3657168) ensures full compliance and authority.
+              Our services are not limited by borders. We are
+              <strong>fully licensed and bonded</strong> to provide
+              international delivery options, offering secure handling of all
+              confidential materials, supported by our multilingual staff.
             </p>
-            <div
-              style="
-                background-color: #f8f8f8;
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 15px;
-                font-style: italic;
-              "
-            >
-              "These guys are lightning fast. Documents served same-day when I
-              was in a critical time crunch." — Robert T., Attorney
-            </div>
-            <a href="#contact" class="btn">GET FAST SERVICE</a>
+            <a href="#contact" class="btn">GET A QUOTE</a>
           </div>
         </div>
       </div>
@@ -834,166 +914,57 @@
         <div class="about-content">
           <div class="about-text">
             <div class="section-header" style="text-align: left">
-              <h2>THE WORLD WIDE LAWYER ADVANTAGE</h2>
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  margin-bottom: 1.5rem;
-                "
-              >
-                <div style="width: 80px; height: 80px; margin-right: 1.5rem">
-                  <div
-                    style="
-                      width: 100%;
-                      height: 100%;
-                      background-color: #f8d948;
-                      border-radius: 5px;
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      justify-content: center;
-                      padding: 5px;
-                      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                      border: 2px solid #333;
-                      position: relative;
-                    "
-                  >
-                    <div
-                      style="
-                        width: 80%;
-                        height: 60%;
-                        background-color: #00a0b0;
-                        clip-path: polygon(
-                          50% 0%,
-                          100% 25%,
-                          100% 75%,
-                          50% 100%,
-                          0% 75%,
-                          0% 25%
-                        );
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-bottom: 5px;
-                        border: 1px solid white;
-                      "
-                    >
-                      <span
-                        style="
-                          color: white;
-                          font-weight: bold;
-                          font-size: 1.2rem;
-                        "
-                        >WW</span
-                      >
-                    </div>
-                    <div
-                      style="
-                        width: 100%;
-                        height: 35%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: #d93636;
-                        border-radius: 3px;
-                      "
-                    >
-                      <span
-                        style="
-                          color: white;
-                          font-size: 0.6rem;
-                          font-weight: bold;
-                        "
-                        >LEGAL SERVICES</span
-                      >
-                    </div>
-                    <div
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        border: 1px solid rgba(0, 0, 0, 0.1);
-                        border-radius: 5px;
-                        pointer-events: none;
-                      "
-                    ></div>
-                  </div>
-                </div>
-                <div>
-                  <h3 style="margin: 0; color: var(--primary)">
-                    OFFICIAL BADGE
-                  </h3>
-                  <span style="font-size: 0.9rem; color: #666"
-                    >US DOT # 3657168</span
-                  >
-                </div>
-              </div>
+              <h2>ABOUT WORLD WIDE LAWYER SERVICES</h2>
             </div>
             <p>
-              World Wide Lawyer Services was founded with a vision to
-              REVOLUTIONIZE legal representation across borders. Led by the
-              formidable Gary Monard, CEO & President, our elite firm brings
-              battle-tested experience in high-stakes legal domains.
+              At World Wide Lawyer Services, we bring
+              <strong>over 20 years of experience</strong> providing fast,
+              secure, and reliable courier services designed to meet the urgent
+              needs of legal professionals, businesses, and individuals. We are
+              fully licensed and bonded, with international delivery options to
+              accommodate a wide range of legal and logistical needs.
             </p>
             <p>
-              Based in Nanuet, NY but with INTERNATIONAL REACH, we've served
-              over 500 satisfied clients with a remarkable 92% success rate. Our
-              team doesn't just practice law – we MASTER it, bringing a unique
-              Caribbean-influenced approach that combines aggressive advocacy
-              with strategic precision.
-            </p>
-            
-            <div style="
-              background-color: rgba(248, 217, 72, 0.1);
-              padding: 20px;
-              border-radius: 10px;
-              margin-bottom: 20px;
-              border-left: 5px solid var(--accent);
-            ">
-              <h3 style="color: var(--primary); margin-top: 0; margin-bottom: 15px;">
-                <i class="fas fa-globe-americas" style="margin-right: 10px;"></i>MULTILINGUAL LEGAL EXPERTISE
-              </h3>
-              <p style="margin-bottom: 10px;">
-                Our diverse legal team speaks <strong>English, Spanish, French, and Haitian Creole</strong>, 
-                allowing us to serve clients across North America, Central America, and the Caribbean with ease.
-              </p>
-              <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="USA" class="flag" title="United States">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Mexico" class="flag" title="Mexico">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ht.svg" alt="Haiti" class="flag" title="Haiti">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/do.svg" alt="Dominican Republic" class="flag" title="Dominican Republic">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jm.svg" alt="Jamaica" class="flag" title="Jamaica">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cu.svg" alt="Cuba" class="flag" title="Cuba">
-              </div>
-            </div>
-            
-            <p>
-              What sets us apart? Our MULTILINGUAL LEGAL EXPERTS understand
-              cultural nuances that other firms miss, giving you unprecedented
-              advantages in negotiations and court. With our official US DOT
-              registration (#3657168), you're working with a fully authorized
-              and recognized legal powerhouse.
+              Whether it’s delivering time-sensitive court documents,
+              confidential contracts, or official notices, our experienced
+              couriers ensure your materials are handled with care,
+              professionalism, and efficiency.
             </p>
 
             <div
               style="
-                background-color: var(--primary);
-                color: white;
-                padding: 15px;
-                border-radius: 5px;
-                margin: 20px 0;
+                background-color: rgba(248, 217, 72, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                border-left: 5px solid var(--accent);
               "
             >
-              <h3 style="margin-top: 0; margin-bottom: 10px">
-                CLIENT SUCCESS GUARANTEE
+              <h3
+                style="
+                  color: var(--primary);
+                  margin-top: 0;
+                  margin-bottom: 15px;
+                "
+              >
+                <i class="fas fa-globe-americas" style="margin-right: 10px"></i
+                >MULTILINGUAL SUPPORT
               </h3>
               <p style="margin-bottom: 0">
-                We don't just promise results – we DELIVER them. If we don't
-                meet our agreed performance metrics, you'll receive a partial
-                fee refund. That's how confident we are in our abilities.
+                Our diverse team speaks
+                <strong>English, Spanish, French, and Haitian Creole</strong>,
+                allowing us to serve a diverse client base with ease and
+                clarity.
               </p>
             </div>
+
+            <p>
+              At World Wide Lawyer Services, we are committed to
+              professionalism, confidentiality, and prompt service. Whether you
+              need a document delivered across town or legal papers served
+              across counties, you can count on us to get the job done right—on
+              time, every time.
+            </p>
           </div>
           <div class="about-image">
             <img src="/api/placeholder/500/400" alt="Law office" />
@@ -1008,7 +979,7 @@
                 text-align: center;
               "
             >
-              LICENSED & BONDED IN ALL 50 STATES
+              LICENSED & BONDED (US DOT # 3657168)
             </div>
             <div
               style="
@@ -1034,9 +1005,9 @@
                     color: var(--primary);
                   "
                 >
-                  500+
+                  20+
                 </div>
-                <div style="font-size: 0.9rem">CASES WON</div>
+                <div style="font-size: 0.9rem">YEARS EXPERIENCE</div>
               </div>
               <div
                 style="
@@ -1055,9 +1026,9 @@
                     color: var(--primary);
                   "
                 >
-                  92%
+                  4
                 </div>
-                <div style="font-size: 0.9rem">SUCCESS RATE</div>
+                <div style="font-size: 0.9rem">LANGUAGES SPOKEN</div>
               </div>
             </div>
           </div>
@@ -1083,10 +1054,11 @@
               text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             "
           >
-            CONTACT OUR LEGAL WARRIORS TODAY
+            GET IN TOUCH!
           </h2>
           <p style="font-size: 1.2rem; color: white; margin-bottom: 1.5rem">
-            Get a FREE case evaluation within 24 hours
+            We're here to help with your legal service needs. Contact us for a
+            free consultation.
           </p>
           <div
             style="
@@ -1104,7 +1076,7 @@
               class="fas fa-bolt"
               style="color: #ffd700; margin-right: 10px"
             ></i>
-            URGENT LEGAL MATTERS? Call us directly at
+            URGENT MATTERS? Call us directly at
             <span style="color: #ffd700; font-weight: bold">718-536-1930</span>
             for immediate assistance!
           </div>
@@ -1128,10 +1100,10 @@
               font-size: 1.8rem;
             "
           >
-            READY TO WIN YOUR CASE?
+            READY TO GET STARTED?
           </h3>
           <p style="font-size: 1.2rem; margin-bottom: 30px; color: #333">
-            Contact our legal warriors for a FREE consultation today!
+            Contact us for a FREE consultation today!
           </p>
 
           <a
@@ -1168,7 +1140,7 @@
                 padding-bottom: 10px;
               "
             >
-              CONTACT OUR LEGAL TEAM DIRECTLY:
+              CONTACT OUR TEAM DIRECTLY:
             </h4>
             <div
               style="
@@ -1303,9 +1275,9 @@
               >
             </div>
             <p>
-              Professional legal services with international reach. We
-              specialize in claims & evictions, court representation, and legal
-              document services.
+              Fast, secure, and reliable courier services for legal
+              professionals, businesses, and individuals. Specializing in
+              document delivery, court filings, and serving legal notices.
             </p>
           </div>
 
@@ -1370,8 +1342,6 @@
             }
           });
         });
-
-        // No longer need the email form handler since we're using a direct mailto link
 
         // Responsive navigation (simplified for this demo)
         const logo = document.querySelector(".logo");
